@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAP Portal v1.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Share+Tech+Mono&display=swap');
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #000;
+      color: #00FF00;
+      margin: 0;
+      padding: 0;
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-thumb { background-color: #008800; }
+    .container-box {
+      box-shadow: 0 0 10px #005500;
+      border: 1px solid #00AA00;
+    }
+    .file-link {
+      transition: background-color 0.1s;
+    }
+    .file-link:hover {
+      background-color: #004400;
+      color: #FFFFFF;
+    }
+    .file-link span {
+      display: inline-block;
+      transition: transform 0.1s;
+    }
+    .file-link:hover span {
+      transform: translateX(4px);
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 'retro-green': '#00FF00' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen p-2 md:p-4">
+
+  <div class="max-w-xs sm:max-w-sm mx-auto container-box p-1">
+
+    <!-- Header -->
+    <header class="text-center border-b border-retro-green pb-1 mb-2">
+      <h1 class="text-xl font-bold uppercase tracking-widest leading-none">
+        [ W A P L I N K ]
+      </h1>
+      <p class="text-xs mt-0.5 opacity-80">
+        Data Service / Mobile Download Portal
+      </p>
+    </header>
+
+    <!-- Menu -->
+    <nav class="text-xs text-center mb-3 flex justify-around border-b border-retro-green opacity-70">
+      <a href="#" class="py-1 hover:text-white">Index</a>
+      <!-- Hidden Tabs -->
+      <!-- <a href="#" class="py-1 hover:text-white">New</a>
+      <a href="#" class="py-1 hover:text-white">Help</a> -->
+    </nav>
+
+    <!-- File List -->
+    <main class="space-y-0.5">
+      <h2 class="text-sm font-bold mt-2 mb-1 text-white bg-green-700 p-0.5">
+        :: FILES (10)
+      </h2>
+
+
+
+      <a href="https://files.catbox.moe/7fbju0.mp3" class="file-link block p-1 text-xs border-b border-gray-900 leading-tight" target="_blank">
+        <span class="mr-2">&gt;</span>
+        <span class="font-bold">Tata Docomo Ringtone.mp3</span>
+        <span class="float-right opacity-60">1.5 MB</span>
+      </a>
+
+    
+
+      <a href="https://files.catbox.moe/18f4ai.mp3" class="file-link block p-1 text-xs border-b border-gray-900 leading-tight" target="_blank">
+        <span class="mr-2">&gt;</span>
+        <span class="font-bold">The Tiger Ringtone.mp3</span>
+        <span class="float-right opacity-60">1.9 MB</span>
+      </a>
+
+
+
+      <a href="https://files.catbox.moe/3zyi1u.mp3" class="file-link block p-1 text-xs border-b border-gray-900 leading-tight" target="_blank">
+        <span class="mr-2">&gt;</span>
+        <span class="font-bold">Muri Ringtone.mp3</span>
+        <span class="float-right opacity-60">2 MB</span>
+      </a>
+
+      <a href="https://files.catbox.moe/3b8iqs.mp3" class="file-link block p-1 text-xs border-b border-gray-900 leading-tight" target="_blank">
+        <span class="mr-2">&gt;</span>
+        <span class="font-bold">Californication Ringtone.mp3</span>
+        <span class="float-right opacity-60">1.2 MB</span>
+      </a>
+
+      <a href="https://files.catbox.moe/lks7jc.mp3" class="file-link block p-1 text-xs border-b border-gray-900 leading-tight" target="_blank">
+        <span class="mr-2">&gt;</span>
+        <span class="font-bold">Urumi Ringtone.mp3</span>
+        <span class="float-right opacity-60">2.1 MB</span>
+      </a>
+
+      <a href="https://files.catbox.moe/zuoenq.mp3" class="file-link block p-1 text-xs border-b border-gray-900 leading-tight" target="_blank">
+        <span class="mr-2">&gt;</span>
+        <span class="font-bold">Eravil Viriyum Ringtone.mp3</span>
+        <span class="float-right opacity-60">1.8 MB</span>
+      </a>
+
+      <a href="https://files.catbox.moe/e41rc3.mp3" class="file-link block p-1 text-xs border-b border-gray-900 leading-tight" target="_blank">
+        <span class="mr-2">&gt;</span>
+        <span class="font-bold">Sickick Infected Ringtone.mp3</span>
+        <span class="float-right opacity-60">1 MB</span>
+      </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-4 text-center text-xs opacity-50 pt-1 border-t border-retro-green">
+      <p>[c] 2002 WAPHOST. PRESS 0 TO EXIT.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+
